@@ -8,5 +8,14 @@ configure :development do
 end
 
 get '/' do
-  'Hello world!'
+  #erb :index
+  erb :time
+end
+
+get '/about' do
+  erb :about
+end
+
+get '/list' do
+  erb :list
 end
